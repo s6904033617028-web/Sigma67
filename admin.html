@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ระบบจัดการคำสั่งซื้อ Admin - SIGMA67</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header class="navbar">
+    <a href="index.html" class="brand-logo">
+      SIGMA<span>67</span> <small style="font-size: 0.8rem; color: var(--accent-color, #ff4757);">[ADMIN]</small>
+    </a>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html" class="nav-link">หน้าแรก</a></li>
+        <li><a href="product.html" class="nav-link">สินค้าทั้งหมด</a></li>
+        <li><a href="admin.html" class="nav-link active">ระบบหลังบ้าน</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Admin Dashboard Container -->
+  <main class="filter-container" style="max-width: 1200px; margin-top: 3rem; margin-bottom: 5rem;">
+    <div class="filter-header" style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; margin-bottom: 2rem;">
+      <div>
+        <h1 class="section-title" style="margin-bottom: 0.5rem;">ORDERS DASHBOARD / รายการสั่งซื้อสินค้า</h1>
+        <p style="color: var(--text-muted); font-size: 0.95rem;">จัดการและตรวจสอบคำสั่งซื้อทั้งหมดที่เข้ามาในระบบ</p>
+      </div>
+    </div>
+
+    <!-- Table Container with horizontal overflow for mobile -->
+    <div style="overflow-x: auto; background: var(--bg-card, #1e1e24); border-radius: 12px; border: 1px solid var(--border-color, #333); box-shadow: 0 10px 30px rgba(0,0,0,0.3); padding: 1rem;">
+      <table id="ordersTable" style="width: 100%; border-collapse: collapse; text-align: left; font-size: 0.95rem;">
+        <thead>
+          <tr style="border-bottom: 2px solid var(--border-color, #444); background: #121214;">
+            <th style="padding: 1rem; font-weight: 600; min-width: 140px;">วันเวลา</th>
+            <th style="padding: 1rem; font-weight: 600; min-width: 150px;">ชื่อลูกค้า</th>
+            <th style="padding: 1rem; font-weight: 600; min-width: 140px;">เบอร์โทร/Line</th>
+            <th style="padding: 1rem; font-weight: 600; min-width: 200px;">รายการสินค้า</th>
+            <th style="padding: 1rem; font-weight: 600; min-width: 120px;">จำนวนเงินรวม</th>
+            <th style="padding: 1rem; font-weight: 600; min-width: 180px;">หมายเหตุ</th>
+          </tr>
+        </thead>
+        <tbody id="ordersTableBody">
+          <!-- Dynamically populated by script.js -->
+        </tbody>
+      </table>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-col">
+        <h4>SIGMA67 Admin</h4>
+        <p>ระบบจัดการคำสั่งซื้อและข้อมูลสินค้าสำหรับผู้ดูแลระบบ</p>
+      </div>
+      <div class="footer-col">
+        <h4>เมนูลัด</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">หน้าแรก</a></li>
+          <li><a href="product.html">สินค้าทั้งหมด</a></li>
+          <li><a href="admin.html">ระบบหลังบ้าน</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>ช่วยเหลือ</h4>
+        <p>Technical Support: admin@sigma67.com</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 SIGMA67 Brand. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

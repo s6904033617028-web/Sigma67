@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>สั่งซื้อสินค้า - SIGMA67 SNEAKERS</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header class="navbar">
+    <a href="index.html" class="brand-logo">
+      SIGMA<span>67</span>
+    </a>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html" class="nav-link">หน้าแรก</a></li>
+        <li><a href="product.html" class="nav-link">สินค้าทั้งหมด</a></li>
+        <li><a href="product.html?style=street" class="nav-link">สตรีทคอลเลกชัน</a></li>
+      </ul>
+    </nav>
+    <div class="nav-actions">
+      <a href="product.html" class="cart-btn" aria-label="สินค้าในตะกร้า">
+        🛒
+        <span class="cart-badge">10</span>
+      </a>
+    </div>
+  </header>
+
+  <!-- Order Form Section -->
+  <main class="filter-container" style="max-width: 700px; margin-top: 3rem; margin-bottom: 5rem;">
+    <div class="filter-header" style="text-align: center; margin-bottom: 2rem;">
+      <h1 class="section-title">ORDER FORM / ฟอร์มสั่งซื้อสินค้า</h1>
+      <p style="color: var(--text-muted); font-size: 0.95rem;">กรุณากรอกข้อมูลการจัดส่งและรายละเอียดคำสั่งซื้อให้ครบถ้วน</p>
+    </div>
+
+    <form id="orderForm" class="order-form-card" style="background: var(--bg-card, #1e1e24); padding: 2.5rem; border-radius: 12px; border: 1px solid var(--border-color, #333); box-shadow: 0 10px 30px rgba(0,0,0,0.3);">
+      
+      <div class="form-group" style="margin-bottom: 1.5rem;">
+        <label for="customerName" style="display: block; margin-bottom: 0.5rem; font-weight: 600;">ชื่อ-นามสกุล ผู้รับสินค้า <span style="color: #e74c3c;">*</span></label>
+        <input type="text" id="customerName" name="customerName" required placeholder="เช่น สมชาย สายลุย" style="width: 100%; padding: 0.8rem 1rem; border-radius: 6px; border: 1px solid #444; background: #121214; color: #fff; font-size: 1rem;">
+      </div>
+
+      <div class="form-group" style="margin-bottom: 1.5rem;">
+        <label for="contact" style="display: block; margin-bottom: 0.5rem; font-weight: 600;">เบอร์โทรศัพท์ / Line ID <span style="color: #e74c3c;">*</span></label>
+        <input type="text" id="contact" name="contact" required placeholder="เช่น 081-234-5678 หรือ line_id_123" style="width: 100%; padding: 0.8rem 1rem; border-radius: 6px; border: 1px solid #444; background: #121214; color: #fff; font-size: 1rem;">
+      </div>
+
+      <div class="form-group" style="margin-bottom: 1.5rem;">
+        <label for="items" style="display: block; margin-bottom: 0.5rem; font-weight: 600;">รายการสินค้าที่สั่งซื้อ <span style="color: #e74c3c;">*</span></label>
+        <textarea id="items" name="items" required rows="3" placeholder="เช่น SIGMA67 Minimal White (1 คู่)" style="width: 100%; padding: 0.8rem 1rem; border-radius: 6px; border: 1px solid #444; background: #121214; color: #fff; font-size: 1rem; resize: vertical;"></textarea>
+      </div>
+
+      <div class="form-group" style="margin-bottom: 1.5rem;">
+        <label for="total" style="display: block; margin-bottom: 0.5rem; font-weight: 600;">จำนวนเงินรวม (บาท) <span style="color: #e74c3c;">*</span></label>
+        <input type="text" id="total" name="total" required placeholder="เช่น 2,490" style="width: 100%; padding: 0.8rem 1rem; border-radius: 6px; border: 1px solid #444; background: #121214; color: #fff; font-size: 1rem;">
+      </div>
+
+      <div class="form-group" style="margin-bottom: 2rem;">
+        <label for="note" style="display: block; margin-bottom: 0.5rem; font-weight: 600;">หมายเหตุ / ระบุไซส์รองเท้า (EU/US/cm)</label>
+        <textarea id="note" name="note" rows="3" placeholder="ระบุไซส์ เช่น EU 42 (26.5 cm) หรือคำขอเพิ่มเติมเกี่ยวกับการส่งสินค้า" style="width: 100%; padding: 0.8rem 1rem; border-radius: 6px; border: 1px solid #444; background: #121214; color: #fff; font-size: 1rem; resize: vertical;"></textarea>
+      </div>
+
+      <button type="submit" class="btn-buy" style="width: 100%; padding: 1rem; font-size: 1.1rem; border: none; cursor: pointer; text-align: center; justify-content: center;">
+        ยืนยันการสั่งซื้อ ➔
+      </button>
+
+    </form>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-col">
+        <h4>SIGMA67</h4>
+        <p>นิยามใหม่ของความเรียบง่ายและสบายเท้า ให้ทุกก้าวของคุณมีสไตล์ไม่เหมือนใคร</p>
+      </div>
+      <div class="footer-col">
+        <h4>เมนูลัด</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">หน้าแรก</a></li>
+          <li><a href="product.html">สินค้าทั้งหมด</a></li>
+          <li><a href="product.html?style=street">สไตล์สตรีท</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>ติดต่อเรา</h4>
+        <p>Email: support@sigma67.com</p>
+        <p>Line: @sigma67</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 SIGMA67 Brand. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

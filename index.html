@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SIGMA67 - นิยามใหม่ของความเรียบง่ายและสบายเท้า</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header class="navbar">
+    <a href="index.html" class="brand-logo">
+      SIGMA<span>67</span>
+    </a>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html" class="nav-link active">หน้าแรก</a></li>
+        <li><a href="product.html" class="nav-link">สินค้าทั้งหมด</a></li>
+        <li><a href="product.html?style=street" class="nav-link">สตรีทคอลเลกชัน</a></li>
+      </ul>
+    </nav>
+    <div class="nav-actions">
+      <a href="product.html" class="cart-btn" aria-label="สินค้าในตะกร้า">
+        🛒
+        <span class="cart-badge">10</span>
+      </a>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="hero-content">
+      <span class="hero-tag">NEW COLLECTION 2026</span>
+      <h1 class="hero-title">SIGMA<span>67</span> SNEAKERS</h1>
+      <p class="hero-subtitle">นิยามใหม่ของความเรียบง่ายและสบายเท้า ให้ทุกก้าวของคุณมีสไตล์ไม่เหมือนใคร</p>
+      <a href="product.html" class="btn-buy" style="font-size: 1.05rem; padding: 0.9rem 2rem; display: inline-flex;">
+        ดูสินค้าทั้งหมด ➔
+      </a>
+    </div>
+  </section>
+
+  <!-- Category / Styles Section -->
+  <main class="filter-container" style="margin-top: 4rem; margin-bottom: 5rem;">
+    <div class="filter-header" style="margin-bottom: 2rem;">
+      <h2 class="section-title">CHOOSE YOUR STYLE / เลือกสไตล์ที่เป็นคุณ</h2>
+      <p style="color: var(--text-muted); font-size: 0.95rem;">ค้นหารองเท้าผ้าใบที่สะท้อนตัวตนของคุณได้สมบูรณ์แบบที่สุด</p>
+    </div>
+
+    <!-- 4 Styles Grid Cards -->
+    <div class="product-grid" style="grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1.8rem;">
+      
+      <!-- Minimal Style Card -->
+      <a href="product.html?style=minimal" class="product-card" style="text-decoration: none;">
+        <span class="style-badge">MINIMAL</span>
+        <div class="product-img-wrapper" style="padding-top: 85%;">
+          <img src="images/minimal.jpg" alt="Minimal Style" class="product-img" onerror="this.src='https://via.placeholder.com/400x300?text=MINIMAL+STYLE'">
+        </div>
+        <div class="product-info" style="align-items: flex-start;">
+          <h3 class="product-name" style="font-size: 1.3rem;">Minimal Style</h3>
+          <p class="product-description" style="-webkit-line-clamp: 3;">เรียบง่าย คลีน แมตช์ใส่ง่ายได้ทุกวันและทุกโอกาส ผลิตจากวัสดุนุ่มพิเศษ</p>
+          <span class="btn-buy" style="margin-top: auto; width: 100%; text-align: center;">สำรวจสไตล์นี้ ➔</span>
+        </div>
+      </a>
+
+      <!-- Street Style Card -->
+      <a href="product.html?style=street" class="product-card" style="text-decoration: none;">
+        <span class="style-badge" style="background-color: var(--accent-color);">STREET</span>
+        <div class="product-img-wrapper" style="padding-top: 85%;">
+          <img src="images/street.jpg" alt="Street Style" class="product-img" onerror="this.src='https://via.placeholder.com/400x300?text=STREET+STYLE'">
+        </div>
+        <div class="product-info" style="align-items: flex-start;">
+          <h3 class="product-name" style="font-size: 1.3rem;">Street Fashion</h3>
+          <p class="product-description" style="-webkit-line-clamp: 3;">ทรง Chunky และ High-Top สุดคูล ดีไซน์ดุดัน โดดเด่นในทุกสายตา</p>
+          <span class="btn-buy" style="margin-top: auto; width: 100%; text-align: center;">สำรวจสไตล์นี้ ➔</span>
+        </div>
+      </a>
+
+      <!-- Active Style Card -->
+      <a href="product.html?style=active" class="product-card" style="text-decoration: none;">
+        <span class="style-badge">ACTIVE</span>
+        <div class="product-img-wrapper" style="padding-top: 85%;">
+          <img src="images/active.jpg" alt="Active Style" class="product-img" onerror="this.src='https://via.placeholder.com/400x300?text=ACTIVE+STYLE'">
+        </div>
+        <div class="product-info" style="align-items: flex-start;">
+          <h3 class="product-name" style="font-size: 1.3rem;">Active Sport</h3>
+          <p class="product-description" style="-webkit-line-clamp: 3;">น้ำหนักเบา ระบายอากาศยอดเยี่ยม พร้อมซัพพอร์ตทุกการเคลื่อนไหวตลอดวัน</p>
+          <span class="btn-buy" style="margin-top: auto; width: 100%; text-align: center;">สำรวจสไตล์นี้ ➔</span>
+        </div>
+      </a>
+
+      <!-- Vintage Style Card -->
+      <a href="product.html?style=vintage" class="product-card" style="text-decoration: none;">
+        <span class="style-badge">VINTAGE</span>
+        <div class="product-img-wrapper" style="padding-top: 85%;">
+          <img src="images/vintage.jpg" alt="Vintage Style" class="product-img" onerror="this.src='https://via.placeholder.com/400x300?text=VINTAGE+STYLE'">
+        </div>
+        <div class="product-info" style="align-items: flex-start;">
+          <h3 class="product-name" style="font-size: 1.3rem;">Vintage Canvas</h3>
+          <p class="product-description" style="-webkit-line-clamp: 3;">ผ้าใบแคนวาสกลิ่นอายเรโทร ทนทาน คลาสสิกไม่มีเอาต์ ยิ่งเก่ายิ่งมีสไตล์</p>
+          <span class="btn-buy" style="margin-top: auto; width: 100%; text-align: center;">สำรวจสไตล์นี้ ➔</span>
+        </div>
+      </a>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-col">
+        <h4>SIGMA67</h4>
+        <p>นิยามใหม่ของความเรียบง่ายและสบายเท้า ให้ทุกก้าวของคุณมีสไตล์ไม่เหมือนใคร</p>
+      </div>
+      <div class="footer-col">
+        <h4>เมนูลัด</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">หน้าแรก</a></li>
+          <li><a href="product.html">สินค้าทั้งหมด</a></li>
+          <li><a href="product.html?style=street">สไตล์สตรีท</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>ติดต่อเรา</h4>
+        <p>Email: support@sigma67.com</p>
+        <p>Line: @sigma67</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 SIGMA67 Brand. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>สินค้าทั้งหมด - SIGMA67 SNEAKERS</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header class="navbar">
+    <a href="index.html" class="brand-logo">
+      SIGMA<span>67</span>
+    </a>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html" class="nav-link">หน้าแรก</a></li>
+        <li><a href="product.html" class="nav-link active">สินค้าทั้งหมด</a></li>
+        <li><a href="product.html?style=street" class="nav-link">สตรีทคอลเลกชัน</a></li>
+      </ul>
+    </nav>
+    <div class="nav-actions">
+      <a href="product.html" class="cart-btn" aria-label="สินค้าในตะกร้า">
+        🛒
+        <span class="cart-badge">10</span>
+      </a>
+    </div>
+  </header>
+
+  <!-- Filter & Header Section -->
+  <section class="filter-container">
+    <div class="filter-header">
+      <h1 class="section-title">ALL PRODUCTS / สินค้าทั้งหมด</h1>
+    </div>
+
+    <!-- Filter Buttons Bar (Injected/Handled by script.js) -->
+    <div id="filter-bar" class="filter-buttons"></div>
+  </section>
+
+  <!-- Product List Grid Container -->
+  <main class="product-grid-container">
+    <!-- Product Cards rendered dynamically by script.js -->
+    <div id="product-list" class="product-grid"></div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-col">
+        <h4>SIGMA67</h4>
+        <p>นิยามใหม่ของความเรียบง่ายและสบายเท้า ให้ทุกก้าวของคุณมีสไตล์ไม่เหมือนใคร</p>
+      </div>
+      <div class="footer-col">
+        <h4>หมวดหมู่สินค้า</h4>
+        <ul class="footer-links">
+          <li><a href="product.html">ทั้งหมด</a></li>
+          <li><a href="product.html?style=minimal">Minimal</a></li>
+          <li><a href="product.html?style=street">Street</a></li>
+          <li><a href="product.html?style=active">Active</a></li>
+          <li><a href="product.html?style=vintage">Vintage</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>ติดต่อเรา</h4>
+        <p>Email: support@sigma67.com</p>
+        <p>Line: @sigma67</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 SIGMA67 Brand. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
